@@ -1,0 +1,48 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+body{
+  font-family: 'Titillium Web', sans-serif
+}
+header{
+ background-color: #243E36;
+}
+.header_nav-bar_h1{
+  color:  #e9e0d8;
+
+}
+li{ 
+  list-style: none;
+}
+a{
+  color: #e9e0d8;
+  text-decoration: none;
+}
+.header_nav-bar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.nav-link{
+  transition: 0.7s ease ;
+}
+.nav-link:hover{
+  color:#7e501b  ;
+}
+.header_hamburger{
+  display: none;
+  cursor: pointer;
+}
+.header_hamburger_bar{
+  display: block;
+}
