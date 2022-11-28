@@ -116,4 +116,52 @@ a {
   .header_nav-menu.active {
     right: 0;
   }
+}
+.photo {
+  max-width: 100%;
+}
+
+.motto {
+  width: 30%;
+  max-width: 100%;
+  display: block;
+  top: 350px;
+  margin: -30px auto;
+}
+
+.profil-photo {
+  width: 50%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #7e501b;
+  margin: auto;
+  margin-bottom: -40px;
+}
+
+.about_section {
+  background-color: #e9e0d8;
+}
+
+.about_text {
+  display: block;
+  margin: auto;
+  background-color: #243E36;
+  color: #e9e0d8;
+  text-align: justify;
+  font-size: 16px;
+  padding: 20px;
+  box-shadow: 0px 5px 10px 0px #aaa;
+}
+
+.about_titel {
+  text-align: center;
+  font-size: 25px;
+  margin: 20px;
+  color: #7e501b;
+}
+
+.about_section {
+  padding: 50px;
+  margin-top: 100px;
 }/*# sourceMappingURL=style.css.map */
