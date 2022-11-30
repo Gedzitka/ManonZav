@@ -9,6 +9,8 @@ body {
 
 .header {
   background-color: #243E36;
+  position: fixed;
+  width: 100%;
 }
 
 li {
