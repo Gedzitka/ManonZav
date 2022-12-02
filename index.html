@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <link rel="stylesheet" href="scss/swiper-bundle.min.css">
   <link rel="stylesheet" href="scss/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -94,79 +94,134 @@
 </div>
 </div>
 </section>
-<div id="container">
-   <div id="slider-container">
-     <span onclick="slideRight()" class="btn"></span>
-       <div id="slider">
-         <div class="slide">
-            <div class="box">
-   
-            <img class="icon" src="img/zada.png" alt="zada">
-       
-            <p class="massage">Klasická masaž
-            </p>
-            <button class="more">Více</button>
-         </div>
-      </div>
-         <div class="slide"><div class="box">
-   
-            <img class="icon" src="img/sije.png" alt="sije">
-       
-            <p class="massage">Lymfatická masáž
-            </p>
-            <button class="more">Více</button>
-         </div>
-      </div>
-         <div class="slide"><div class="box">
-   
-            <img class="icon" src="img/ruce.png" alt="ruce">
-       
-            <p class="massage"> Breussova masáž
-            </p>
-            <button class="more">Více</button>
-         </div>
-      </div>
-         <div class="slide"><div class="box">
-   
-            <img class="icon" src="img/zada.png" alt="zada">
-       
-            <p class="massage">Lávové kameny
-            </p>
-            <button class="more">Více</button>
-         </div>
-      </div>
-         <div class="slide"><div class="box">
-   
-            <img class="icon" src="img/nohy.png" alt="noha">
-       
-            <p class="massage">Akupresura
-            </p>
-            <button class="more">Více</button>
-         </div>
-      </div>
-         <div class="slide"><div class="box">
-   
-            <img class="icon" src="img/zada.png" alt="zada">
-       
-            <p class="massage">Dornova metoda
-            </p>
-            <button class="more">Více</button>
-         </div>
-      </div>
-         <div class="slide"><div class="box">
-   
-            <img class="icon" src="img/reiki.png" alt="reiki">
-       
-            <p class="massage">Reiki
-            </p>
-            <button class="more">Více</button>
-         </div>
-      </div>
-         
-     </div>
-     <span onclick="slideLeft()" class="btn"></span>
+<div class="slide-container swiper">
+   <div class="slide-content">
+       <div class="card-wrapper swiper-wrapper">
+           <div class="card swiper-slide">
+               <div class="image-content">
+                   <span class="overlay"  style="background-image:url(img/klasicka.png) ;background-position: center;background-size: cover;background-repeat: no-repeat;"></span>
+
+                   <div class="card-image">
+                     <img class="card-img" src="img/zada.png" alt="zada">
+                       
+                   </div>
+               </div>
+
+               <div class="card-content">
+                   
+                   <p class="description">Klasická masáž</p>
+
+                   <button class="button">Více</button>
+               </div>
+           </div>
+           <div class="card swiper-slide">
+               <div class="image-content">
+                   <span class="overlay" style="background-image:url(img/lymfaticka.png) ;background-position: center;background-size: cover;background-repeat: no-repeat;"></span>
+
+                   <div class="card-image">
+                     <img class="card-img" src="img/sije.png" alt="sije">
+                      
+                   </div>
+               </div>
+
+               <div class="card-content">
+                  
+                   <p class="description">Lymfatická masáž</p>
+
+                   <button class="button">Více</button>
+               </div>
+           </div>
+           <div class="card swiper-slide">
+               <div class="image-content">
+                   <span class="overlay" style="background-image:url(img/klasicka.png) ;background-position: center;background-size: cover;background-repeat: no-repeat;"></span>
+
+                   <div class="card-image">
+                     <img class="card-img" src="img/zada.png" alt="zada">
+                   </div>
+               </div>
+
+               <div class="card-content">
+
+                   <p class="description">Breussova masáž</p>
+
+                   <button class="button">Více</button>
+               </div>
+           </div>
+           <div class="card swiper-slide">
+               <div class="image-content">
+                   <span class="overlay" style="background-image:url(img/akupresura.png) ;background-position: center;background-size: cover;background-repeat: no-repeat;"></span>
+
+                   <div class="card-image">
+                     <img class="card-img" src="img/ruce.png" alt="ruce">  
+                   </div>
+               </div>
+
+               <div class="card-content">
+                   
+                   <p class="description">Akupresura</p>
+
+                   <button class="button">Více</button>
+               </div>
+           </div>
+           <div class="card swiper-slide">
+               <div class="image-content">
+                   <span class="overlay" style="background-image:url(img/kameny.png) ;background-position: center;background-size: cover;background-repeat: no-repeat;"></span>
+
+                   <div class="card-image">
+                     <img class="card-img" src="img/zada.png" alt="zada">    
+                   </div>
+               </div>
+
+               <div class="card-content">
+                   
+                   <p class="description">Lávové kameny</p>
+
+                   <button class="button">Více</button>
+               </div>
+           </div>
+           <div class="card swiper-slide">
+               <div class="image-content">
+                   <span class="overlay" style="background-image:url(img/klasicka.png) ;background-position: center;background-size: cover;background-repeat: no-repeat;"></span>
+
+                   <div class="card-image">
+                     <img class="card-img" src="img/zada.png" alt="zada">  
+                   </div>
+               </div>
+
+               <div class="card-content">
+                   
+                   <p class="description">Dornova metoda</p>
+
+                   <button class="button">Více</button>
+               </div>
+           </div>
+           <div class="card swiper-slide">
+               <div class="image-content">
+                   <span class="overlay" style="background-image:url(img/praiki.png) ;background-position: center;background-size: cover;background-repeat: no-repeat;"></span>
+
+                   <div class="card-image">
+                     <img class="card-img" src="img/reiki.png" alt="reiki">  
+                   </div>
+                 </div>
+
+                 <div class="card-content">
+                     
+                     <p class="description">Reiki</p>
+
+                     <button class="button">Více</button>
+                   
+               </div>
+               </div>
+
+            
+       </div>
    </div>
- </div>
+
+   <div class="swiper-button-next swiper-navBtn"></div>
+   <div class="swiper-button-prev swiper-navBtn"></div>
+   <div class="swiper-pagination"></div>
+</div>
+ 
 
 
 
@@ -178,8 +233,8 @@
 
 
  
-
-  <script src="script.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
 
