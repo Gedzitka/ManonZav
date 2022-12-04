@@ -3,10 +3,14 @@ $telova: #e9e0d8;
 $bila: white;
 $hneda:#7e501b;
 $shadow: 0px 5px 10px 0px #aaa;
+$shadow-dack:0px 5px 10px 0px rgb(48, 45, 45);
+
 $font-base:'Titillium Web', sans-serif ;
 $specer:30px;
 body{
   font-family: $font-base;
+  background-color: $telova;
+
  
 }
 *{
@@ -25,6 +29,7 @@ body{
  width: 100%;
  height: auto;
  z-index: 1;
+ box-shadow: $shadow;
 
   }
   li{
@@ -53,20 +58,33 @@ body{
   }
   
   .header_nav-bar_h1{
-    font-size: 2rem;
+    font-size: 30px;
     color: $telova;
+    letter-spacing: 3px;
   }  
   .header_order{
-    background-color: $primary;
-    width: 5.5em;
-    height: 5.5em;
-    vertical-align: middle;
-    text-decoration: none;
-    border-radius: 100%;
-    color:$telova;
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid $telova;}
+    border: none;
+    font-size: 18px;
+    color:$bila;
+    padding: 8px 16px;
+    background-color:#7e501b ;
+    border-radius: 15px;
+    margin: 14px;
+    font-family: $font-base;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: $shadow-dack;
+  }
+    // background-color: $hneda;
+    // width: 5.5em;
+    // height: 5.5em;
+    // vertical-align: middle;
+    // text-decoration: none;
+    // border-radius: 100%;
+    // color:$telova;
+    // padding: 5px;
+    // margin: 5px;
+    // border: 1px solid $telova;}
    
   
   .header_nav-menu{
@@ -161,7 +179,7 @@ body{
     text-align: justify;
     font-size: 16px;
     padding: 20px;
-    box-shadow: 0px 5px 10px 0px #aaa;
+    box-shadow: $shadow;
   }
   
   .about_titel{
@@ -221,21 +239,6 @@ body{
     width: 80%;
     border-radius: 25px 25px 0 25px;
   }
-  .overlay::before,
-  .overlay::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background-color: white;
-  }
-  .overlay::after{
-    border-radius: 0 25px 0 0;
-    background-color: #FFF;
-  }
-  
   .card-image{
     position: relative;
     height: 70px;
@@ -254,8 +257,10 @@ body{
   
   .description{
     font-size: 20px;
-    color:#243E36;
+    color:$primary;
     text-align: center;
+    font-weight: bold;
+    
   }
   .button{
     border: none;
@@ -263,10 +268,12 @@ body{
     color: #FFF;
     padding: 8px 16px;
     background-color:#7e501b ;
-    border-radius: 6px;
+    border-radius: 10px;
+    font-family: $font-base;
     margin: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: $shadow;
   }
   .button:hover{
     background:#243E36 ;
@@ -307,18 +314,92 @@ body{
     }
   }
   .voucher{ 
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
-    margin:auto ;
-    display: block;
-    padding-bottom: 40px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+ 
+    
   
   }
  
- .new{
-  background-color: $telova;
- }
+.masage{
+  background-color: $bila;
+  padding-top:30px;
+}
+  
+
  .masage-type{
-  margin-top: 80px;
+  margin-top: 100px;
  }
- 
+ .form{
+ text-align: center;
+  margin:auto;
+  max-width: 80%;
+  margin: 100px auto;
+ }
+ textarea{
+  width: 80%;
+  min-height: 100px;
+  border: none;
+  margin: 5px;
+  border-radius: 15px;
+ }
+ input{
+  width: 80%;
+  height: 25px;
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 15px;
+
+ }
+ .submit{
+  border: none;
+  height: auto;
+  font-size: 20px;
+  color: #FFF;
+  padding: 5px;
+  background-color:#7e501b ;
+  border-radius: 10px;
+  font-family: $font-base;
+  margin: 14px;
+  box-shadow: $shadow;
+
+ }
+ .notificationName,.notificationEmail{
+  display: none;
+ }
+ .footer{
+  background-color: $primary;
+ }
+ .footer-link{
+  background-color: $primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:5px ;
+  gap:5%;
+  font-weight: bold;
+  font-size: 16px;
+  
+  
+ }
+ .copy{
+  display: flex;
+  justify-content: center;
+  color: $telova;
+  padding: 5px;
+ }
+ .icon{
+  width: 20px;
+  max-width: 100%;
+
+
+ }
+ .icons{
+  display: flex;
+  justify-content: center;
+  gap:10px
+ }
