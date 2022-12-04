@@ -2,22 +2,30 @@ $primary:#243E36;
 $telova: #e9e0d8;
 $bila: white;
 $hneda:#7e501b;
-
+$shadow: 0px 5px 10px 0px #aaa;
 $font-base:'Titillium Web', sans-serif ;
 $specer:30px;
 body{
   font-family: $font-base;
+ 
 }
 *{
     padding: 0;
     margin: 0;
+  }
+  h2{
+    text-align: center;
+    font-size: 30px;
+   
+    color:$hneda;
   }
   .header{
  background-color: $primary;
  position: fixed;
  width: 100%;
  height: auto;
- 
+ z-index: 1;
+
   }
   li{
     list-style: none;
@@ -31,6 +39,7 @@ body{
     max-width: 1224px;
     width: 90%;
     margin: 0 auto;
+    z-index: 1;
    
    
   }
@@ -87,7 +96,10 @@ body{
   }
   .photo-titel{
     max-width: 100%;
+    height: auto;
     margin-top: 83px;
+    
+   
   }
   @media(max-width:1024px){
     .header_hamburger{
@@ -123,15 +135,20 @@ body{
   }
   .photo{
    
-    max-width: 100%;
+    max-width: 100vw;
+    height: auto;
+    margin: 0 0 0 auto;
+    display: block;
   }
   
   .motto{
     width: 30%;
     max-width: 100%;
   display: block;
-    top: 350px;
-    margin: -30px auto
+    top: 500px;
+    margin: -30px auto;
+    box-shadow: $shadow;
+    border-radius: 50%;
   }
   .profil-photo{
     width: 50%;
@@ -178,11 +195,15 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #EFEFEF;
+    z-index: -1;
+   
   }
   .slide-container{
     max-width: 1120px;
     width: 100%;
     padding: 40px 0;
+   
+    z-index: 0;
   }
   .slide-content{
     margin: 0 40px;
@@ -208,10 +229,9 @@ body{
   }
   .overlay{
     position: absolute;
-    left: 0;
-    top: 0;
+    top: 10%;
     height: 100%;
-    width: 100%;
+    width: 80%;
     border-radius: 25px 25px 0 25px;
   }
   .overlay::before,
@@ -231,8 +251,8 @@ body{
   
   .card-image{
     position: relative;
-    height: 150px;
-    width: 150px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     background:none;
     padding: 3px;
@@ -299,3 +319,19 @@ body{
       display: none;
     }
   }
+  .voucher{ 
+    max-width: 80%;
+    height: auto;
+    margin:auto ;
+    display: block;
+    padding-bottom: 40px;
+  
+  }
+ 
+ .new{
+  background-color: $telova;
+ }
+ .masage-type{
+  margin-top: 80px;
+ }
+ 
